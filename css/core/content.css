@@ -1,0 +1,41 @@
+html, body{background-color:#F3F3F3;}
+body{font-family:Arial, Helvetica, sans-serif; #333;}
+/* **************** CONTENT OBJECTS ***************** */
+
+/* ====== Elements ====== */
+img{display:block;}
+em{font-style: italic;}
+strong{font-weight:bold;}
+hr{border: 5px solid #e2e2e2; border-width: 0 0 5px 0; margin: 20px 10px 10px 10px;}
+code{color:#0B8C8F;}
+
+.important a{font-weight:bold;}/* what is this? */
+/* links */
+a {color:#B42E34; text-decoration:none;}
+a:focus, a:hover {color:#B42E34; text-decoration:underline;}
+a:focus{background-color:#FFFFCC;}
+a:visited {color:#B42E34; text-decoration:underline;}
+/* ====== Lists ======*/
+/* numbered list */
+ol.simpleList li{list-style-type: decimal; margin-left:40px;}
+/* standard list */
+ul.simpleList li{list-style-type:disc; margin-left:40px;}
+/* horizontal list */
+ul.horizontal li{display:inline; margin-left:10px;}
+/* ====== blockquote ====== */
+cite{display:block; text-align:right; padding:10px 0 0 10px; font-style:italic;}
+/* ====== callout ====== */
+.callout{padding:10px 0 0 10px; font-size:114.3%; text-transform:uppercase; font-weight:bold; color:#B42E34;}/*16px*/
+.callout cite{display:block; text-align:right;padding-top: 30px;}
+.callout span.quot{vertical-align: sub;}
+.callout span.quotLast{vertical-align:middle;}
+/* ====== image treatments (get more from jason santa maria) ====== */
+.caption{font-size:13px; color:#666666; font-style:italic;padding-top:0;}
+/* will need to either
+1. find a way to capture the width of the caption in the width of the image or flash
+2. Set some default widths, mby use flickr widths?
+*/
+/* ====== special formatting classes ====== */
+.detail{color: #777; font-size:11px;display:block;}
+/* ====== images ====== */
+.icon{margin-right: 5px;}

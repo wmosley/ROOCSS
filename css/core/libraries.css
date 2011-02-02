@@ -1,0 +1,52 @@
+/*
+Copyright (c) 2008, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 3.0.0pr2
+*/
+/* reset */
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+
+/* Basic Cellphones ----------- */
+@media only screen and (min-width : 120px) and (max-width : 319px) {
+/* fonts */
+body{font:14.5px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}select,input,button,textarea{font:99% arial,helvetica,clean,sans-serif;}table{font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+}
+
+
+/* Small Mobile Devices & Smartphones - viewport 320px - 599px ----------- */
+@media only screen and (min-width : 320px) and (max-width : 599px) {
+/* fonts */
+body{font:14.5px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}select,input,button,textarea{font:99% arial,helvetica,clean,sans-serif;}table{font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+}
+
+/* Medium Mobile Devices - viewport 600px - 959px ----------- */
+@media only screen and (min-width : 600px) and (max-width : 959px) {
+/* fonts */
+body{font:16px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}select,input,button,textarea{font:99% arial,helvetica,clean,sans-serif;}table{font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+}
+
+
+/* Small Desktop screens - viewport 960px - 1159px ----------- */
+@media only screen and (min-width : 960px) and (max-width : 1159px) {
+/* fonts */
+body{font:16px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}select,input,button,textarea{font:99% arial,helvetica,clean,sans-serif;}table{font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+}
+
+/*Medium  Formats can be combined - Multiple groups Eloquent specific*/
+/* Medium Desktop & Laptop screens - viewport 1160px - 1399px ----------- */
+@media only screen and (min-width : 1160px) and (max-width : 1399px) {
+/* fonts */
+body{font:16px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}select,input,button,textarea{font:99% arial,helvetica,clean,sans-serif;}table{font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+}
+
+/* Medium Desktop & Laptop screens - viewport 1400px - 1639px ----------- */
+@media only screen and (min-width : 1400px) and (max-width : 1639px) {
+/* fonts */
+body{font:16px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}select,input,button,textarea{font:99% arial,helvetica,clean,sans-serif;}table{font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1640px) {
+
+}

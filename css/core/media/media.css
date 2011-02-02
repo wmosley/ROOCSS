@@ -1,0 +1,47 @@
+/* ====== media (requires mod.css) ====== */
+.media{margin: 10px;}
+.media:after, .bd:after{clear:both;display:block;visibility:hidden;overflow:hidden;height:0 !important;line-height:0;font-size:xx-large;content:" x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";}
+.media .bd{display:table-cell; zoom:1;}
+.media .bd > :first-child{margin-top:0;}
+.media .bd > :last-child{margin-bottom:0;}
+.media .img{float:left;/*margin-right: 10px;*/}
+.media .img img{display:block;}
+.media .imgExt{float:right; /*margin-left: 10px;*/}
+
+
+/* Basic Cellphones ----------- */
+@media only screen and (min-width : 120px) and (max-width : 319px) {
+.media .imgFeat{float:none; margin:0 auto;}
+}
+
+/* Small Mobile Devices & Smartphones - viewport 320px - 599px ----------- */
+@media only screen and (min-width : 320px) and (max-width : 599px) {
+.media .imgFeat{float:none; margin:0 auto;}
+}
+
+/* Medium Mobile Devices - viewport 600px - 959px ----------- */
+@media only screen and (min-width : 600px) and (max-width : 959px) {
+.media .imgFeat{float:left;/*margin-right: 10px;*/}
+}
+
+
+/* Small Desktop screens - viewport 960px - 1159px ----------- */
+@media only screen and (min-width : 960px) and (max-width : 1159px) {
+.media .imgFeat{float:left;/*margin-right: 10px;*/}
+}
+
+/*Medium  Formats can be combined - Multiple groups Eloquent specific*/
+/* Medium Desktop & Laptop screens - viewport 1160px - 1399px ----------- */
+@media only screen and (min-width : 1160px) and (max-width : 1399px) {
+.media .imgFeat{float:left;/*margin-right: 10px;*/}
+}
+
+/* Medium Desktop & Laptop screens - viewport 1400px - 1639px ----------- */
+@media only screen and (min-width : 1400px) and (max-width : 1639px) {
+.media .imgFeat{float:left;/*margin-right: 10px;*/}
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1640px) {
+.media .imgFeat{float:left;/*margin-right: 10px;*/}
+}

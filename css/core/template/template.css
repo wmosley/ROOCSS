@@ -1,0 +1,93 @@
+/* **************** TEMPLATE ***************** */
+/* ====== Page Head, Body, and Foot ====== */
+body{_text-align:center;}/* IE5.5 */
+.main{display:table-cell;*display:block;width:auto;}
+.body,.main{*zoom:1;}
+.body:after,.main:after{clear:both;display:block;visibility:hidden;overflow:hidden;height:0 !important;line-height:0;font-size:xx-large;content:" x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";}
+.page{margin:0 auto;width:950px;_text-align:left;} /* wraps other template elems to set width */ /* text-align IE5.5 */
+/* "old school" and "liquid" extend page to allow for different page widths */
+.oldSchool{width:750px;}
+.gs960{width:960px;}
+.liquid{width:auto;margin:0;}
+.responsive{width:960px; display:table-cell;*display:block; margin:0 auto;}
+/* ====== Columns ====== */
+.leftCol{float:left;width:250px;_margin-right:-3px;}
+.rightCol{float:right;width:300px;_margin-left:-3px;}
+/* extend columns to allow for common column widths */
+.gMail{width:160px;}
+.gCal{width:180px;}
+.yahoo{width:240px;}
+.myYahoo{width:300px;}
+
+
+.search-field {
+	padding:0 5px;
+	color:#333;
+}
+
+.search-btn {
+	background-image:url(../../../../images/search-icon.jpg);
+	background-repeat:no-repeat;
+}
+
+/** 
+ * Defining viewport objects 
+ * sm = mobile screen
+ * sd = desktop screen
+ * tv = tv screen 
+ * viewports = basic, smartphone, tablet, desktop - small, desktop - med, desktop - large, tv screen
+ * all mobile = .sma
+ * all tablet = .sta
+ * all desktop = .sda
+ * <screen><type><size>
+ */
+
+/*Clears display by default. Important defines viewport*/
+.sma, .sta, .sda, .smb, .sms, .smt, .sds, .sdm, .sdl, .stv{display:none;}
+
+/* Basic Cellphones ----------- */
+@media only screen and (min-width : 120px) and (max-width : 319px) {
+.sma, .smb{display:block !important;}
+}
+
+/* Small Mobile Devices & Smartphones - viewport 320px - 599px ----------- */
+@media only screen and (min-width : 320px) and (max-width : 599px) {
+.sma, .sms{display:block !important;}
+}
+
+/* Medium Mobile Devices - viewport 600px - 959px ----------- */
+@media only screen and (min-width : 600px) and (max-width : 959px) {
+.sta, .smt{display:block !important;}
+}
+
+
+/* Small Desktop screens - viewport 960px - 1159px ----------- */
+@media only screen and (min-width : 960px) and (max-width : 1159px) {
+.sda, .sds{display:block !important;}
+
+.responsive{width:960px;}
+}
+
+/*Medium  Formats can be combined - Multiple groups Eloquent specific*/
+/* Medium Desktop & Laptop screens - viewport 1160px - 1399px ----------- */
+@media only screen and (min-width : 1160px) and (max-width : 1399px) {
+.sda, .sdm{display:block !important;}
+
+.responsive{width:960px;  border-left:solid #FFF 100px; border-right:solid #FFF 100px;}
+}
+
+/* Medium Desktop & Laptop screens - viewport 1400px - 1639px ----------- */
+@media only screen and (min-width : 1400px) and (max-width : 1639px) {
+.sda, .sdl{display:block !important;}
+
+body {max-width:1400px}
+.responsive{width:960px; border-left:solid #FFF 100px; border-right:solid #FFF 100px;}
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1640px) {
+.sda, .stv{display:block !important;}
+
+body {max-width:1640px}
+.responsive{width:960px; border-left:solid #FFF 100px; border-right:solid #FFF 100px;}
+}

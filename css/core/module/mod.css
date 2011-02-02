@@ -1,0 +1,152 @@
+/*
+Copyright (c) 2009, Nicole Sullivan. All rights reserved.
+Code licensed under the BSD License:
+version: 0.2
+*/
+/* **************** BLOCK STRUCTURES ***************** */
+/* mod */
+.mod{margin:10px;}
+.mod .inner{/*background: url(skin/transparent.png) repeat left top;*/}
+.bd,.ft, .hd{display: inline-block; width:100%; *display:block; *width:auto; zoom:1;}
+.inner:after,.hd:after,.bd:after,.ft:after{clear:both;display:block;visibility:hidden;overflow:hidden;height:0 !important;line-height:0;font-size:xx-large;content:" x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";}
+.inner{position:relative;}
+b{display:block;background-repeat:no-repeat;font-size:1%;position:relative;z-index:10;}
+.tl, .tr, .bl, .br{height:10px; width:10px;float:left;}
+.tl{background-position: left top;}
+.tr{background-position: right top;}
+.bl{background-position: left bottom;}
+.br{background-position: right bottom;}
+.br,.tr{float:right;}
+.tr, .tl{overflow:hidden;margin-bottom:-32000px;}/* margin bottom needs to be < -9px */
+.bl,.br{margin-top:-10px;}
+.top{background-position:center top;}
+.bottom{background-position:center bottom;_zoom:1;}/* this zoom required for IE5.5 only*/
+/* complex */
+.complex{overflow:hidden;*position:relative;*zoom:1;}/* position/zoom required for IE7, 6, 5.5 */
+.complex .tl, .complex .tr{height:32000px; margin-bottom:-32000px;width:10px;}
+.complex .bl, .complex .br{/*margin-top:0;*/}
+.complex .top{height:5px;}
+.complex .bottom{height:5px;/*margin-top:-10px;*/}
+/* pop */
+.pop{overflow:visible;margin: 10px 20px 20px 10px; background-position:left top;}
+.pop .inner{right:-10px; bottom:-10px; background-position:right bottom;padding:0 10px 10px 0;}
+.pop .tl, .pop .br{display:none;}
+.pop .bl{bottom:-10px;}
+.pop .tr{right:-10px;}
+
+
+/* Basic Cellphones ----------- */
+@media only screen and (min-width : 120px) and (max-width : 319px) {
+.lmxs{width:20%; min-width:100px; max-width:300px;}
+.lms{width:40%; min-width:100px; max-width:300px;}
+.lmm{width:60%; min-width:100px; max-width:300px;}
+.lml{width:80%; min-width:100px; max-width:300px;}
+.lmxl{width:100%; min-width:100px; max-width:300px;}
+
+.fmxs{width:16px;}
+.fms{width:38.4px;}
+.fmm{width:64px;}
+.fml{width:80px;}
+.fmxl{width:96px;}
+}
+
+
+/* Small Mobile Devices & Smartphones - viewport 320px - 599px ----------- */
+@media only screen and (min-width : 320px) and (max-width : 599px) {
+
+
+.lmxs{width:20%; min-width:100px; max-width:300px;}
+.lms{width:40%; min-width:100px; max-width:300px;}
+.lmm{width:60%; min-width:100px; max-width:300px;}
+.lml{width:80%; min-width:100px; max-width:300px;}
+.lmxl{width:100%; min-width:100px; max-width:300px;}
+
+.fmxs{width:16px;}
+.fms{width:25px;}
+.fmm{width:40px;}
+.fml{width:50px;}
+.fmxl{width:70px;}
+}
+
+/* Medium Mobile Devices - viewport 600px - 959px ----------- */
+@media only screen and (min-width : 600px) and (max-width : 959px) {
+.lmxs{width:10%; min-width:100px; max-width:300px;}
+.lms{width:20%; min-width:100px; max-width:300px;}
+.lmm{width:30%; min-width:100px; max-width:300px;}
+.lml{width:40%; min-width:100px; max-width:300px;}
+.lmxl{width:50%; min-width:100px; max-width:300px;}
+
+.fmxs{width:15px;}
+.fms{width:32px;}
+.fmm{width:50px;}
+.fml{width:80px;}
+.fmxl{width:120px;}
+}
+
+
+/* Small Desktop screens - viewport 960px - 1159px ----------- */
+@media only screen and (min-width : 960px) and (max-width : 1159px) {
+.lmxs{width:10%; min-width:100px; max-width:300px;}
+.lms{width:20%; min-width:100px; max-width:300px;}
+.lmm{width:30%; min-width:100px; max-width:300px;}
+.lml{width:40%; min-width:100px; max-width:300px;}
+.lmxl{width:50%; min-width:100px; max-width:300px;}
+
+.fmxs{width:15px;}
+.fms{width:32px;}
+.fmm{width:50px;}
+.fml{width:80px;}
+.fmxl{width:120px;}
+}
+
+/*Medium  Formats can be combined - Multiple groups Eloquent specific*/
+/* Medium Desktop & Laptop screens - viewport 1160px - 1399px ----------- */
+@media only screen and (min-width : 1160px) and (max-width : 1399px) {
+.lmxs{width:10%; min-width:100px; max-width:300px;}
+.lms{width:20%; min-width:100px; max-width:300px;}
+.lmm{width:30%; min-width:100px; max-width:300px;}
+.lml{width:40%; min-width:100px; max-width:300px;}
+.lmxl{width:50%; min-width:100px; max-width:300px;}
+
+.fmxxs{width:15px;}
+.fmxs{width:32px;}
+.fms{width:50px;}
+.fmm{width:80px;}
+.fml{width:160px;}
+.fmxl{width:320px;}
+.fmxxl{width:640px;}
+}
+
+/* Medium Desktop & Laptop screens - viewport 1400px - 1639px ----------- */
+@media only screen and (min-width : 1400px) and (max-width : 1639px) {
+.lmxs{width:10%; min-width:100px; max-width:300px;}
+.lms{width:20%; min-width:100px; max-width:300px;}
+.lmm{width:30%; min-width:100px; max-width:300px;}
+.lml{width:40%; min-width:100px; max-width:300px;}
+.lmxl{width:50%; min-width:100px; max-width:300px;}
+
+.fmxxs{width:15px;}
+.fmxs{width:32px;}
+.fms{width:50px;}
+.fmm{width:80px;}
+.fml{width:160px;}
+.fmxl{width:320px;}
+.fmxxl{width:640px;}
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1640px) {
+.lmxs{width:10%; min-width:100px; max-width:300px;}
+.lms{width:20%; min-width:100px; max-width:300px;}
+.lmm{width:30%; min-width:100px; max-width:300px;}
+.lml{width:40%; min-width:100px; max-width:300px;}
+.lmxl{width:50%; min-width:100px; max-width:300px;}
+
+.fmxxs{width:15px;}
+.fmxs{width:32px;}
+.fms{width:50px;}
+.fmm{width:80px;}
+.fml{width:160px;}
+.fmxl{width:320px;}
+.fmxxl{width:640px;}
+}
